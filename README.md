@@ -17,6 +17,8 @@ $timer->estimateReadTime($markup);
 
 This will parse the text within the `$markup` variable and determine how long it will take an average person to read the text contained within. By default, the average reading speed is set to 275 words per minute (as determined by [Medium](https://medium.com) in [this article](https://medium.com/the-story/read-time-and-you-bc2048ab620c)).
 
+It then returns the amount of time (in seconds) that the expected average user will take to read the content.
+
 ### Counters ###
 ReadTime supports the concept of counters, which are additional checks on supplied markup that will allow users to use css3 style selectors to find elements within the provided markup that may need to be counted differently (ex: images).
 
