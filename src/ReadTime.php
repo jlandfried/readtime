@@ -34,7 +34,7 @@ class ReadTime implements ReadTimeInterface {
     foreach($articles as $article) {
       $times[] = $this->estimateReadTime($article);
     }
-    var_dump($times);
+
     return array_sum($times);
   }
 
